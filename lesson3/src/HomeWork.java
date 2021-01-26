@@ -22,7 +22,7 @@ public class HomeWork {
             System.out.println(sum++);
         }
         if ( sum < 0 ) {
-            System.out.println(sum + 2);
+            System.out.println(sum - 2);
         }
         if  ( sum == 0 ) {
             sum = 10;
