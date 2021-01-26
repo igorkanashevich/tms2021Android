@@ -1,6 +1,3 @@
-import java.util.Random;
-import java.util.Scanner;
-
 public class HomeWork {
     public static void main(String[] args) {
         System.out.println(operation(1));
@@ -20,8 +17,7 @@ public class HomeWork {
      *  return number value after operation
      */
     public static int operation(int number) {
-        Scanner scanner = new Scanner(System.in);
-        int sum = scanner.nextInt();
+        int sum = number;
         if ( sum > 0 ) {
             System.out.println(sum++);
         }
@@ -32,7 +28,7 @@ public class HomeWork {
             sum = 10;
         }
         System.out.println(sum);
-        return 0;
+        return number;
     }
 
 
@@ -41,9 +37,11 @@ public class HomeWork {
      *  - if remainder of the division number by 3 is zero - print "foo" (example of number - 6)
      *  - if remainder of the division number by 5 is zero - print "bar" (example of number - 10)
      *  - if remainder of the division number by both 3 and 5 is zero 0  and - print "foobar" (example of number - 15)
+     * @return
      */
-    public static void foobar(int number) {
+    public static int foobar(int number) {
 
+        return number;
     }
 
     /**
