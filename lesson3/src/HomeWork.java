@@ -40,9 +40,21 @@ public class HomeWork {
      * @return
      */
     public static int foobar(int number) {
-
+        int i = number;
+        int a = 3;
+        int b = 5;
+        if (i % a == 0) {
+            System.out.println("foo");
+        }
+        if (i % b == 0) {
+            System.out.println("bar");
+        }
+        if (i %a ==0&&b==5)
+            System.out.println("foobar");
         return number;
+
     }
+
 
     /**
      * Steps to implement:
