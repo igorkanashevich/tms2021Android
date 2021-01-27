@@ -25,7 +25,7 @@ public class HomeWork {
             System.out.println(++number);
         }
         if (number < 0) {
-            System.out.println(number - 2);
+            System.out.println(number -= 2);
         }
         if (number == 0) {
             number = 10;
@@ -43,17 +43,15 @@ public class HomeWork {
      * @return
      */
     public static int foobar(int number) {
-        int i = number;
-        int a = 3;
-        int b = 5;
-        if (i % a == 0) {
+
+        if (number % 3 == 0) {
             System.out.println("foo");
         }
 
-        if (i % b == 0) {
+        if (number % 5 == 0) {
             System.out.println("bar");
         }
-        if (i % a == 0 && i % b == 0)
+        if (number % 3 == 0 && number % 5 == 0)
             System.out.println("foobar");
         return number;
 
