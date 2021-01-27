@@ -1,3 +1,7 @@
+import java.util.Arrays;
+import java.util.Random;
+import java.util.Scanner;
+
 public class HomeWork {
     public static void main(String[] args) {
         System.out.println(operation(1));
@@ -79,7 +83,25 @@ public class HomeWork {
      *   Note that 21 % 3 == 0 and 21 % 7 = 0, but output is not +-, but +
      */
     public static void printMatrix() {
-
+        Scanner scanner = new Scanner(System.in);
+        Random random = new Random();
+        int num = scanner.nextInt();
+        int num_1 = scanner.nextInt();
+        int[][] twoDArray = new int[num][num_1];
+        String[][] twoDArray_1 = new String[num][num_1];
+        for (int i = 0; i < twoDArray.length; i++) {
+            for (int j = 0; j < twoDArray[i].length; j++) {
+                twoDArray[i][j] = random.nextInt(100);
+                if (twoDArray[i][j] % 3 == 0) {
+                    twoDArray_1[i][j] = "+";
+                } else if (twoDArray[i][j] % 7 == 0) {
+                    twoDArray_1[i][j] = "-";
+                } else {
+                    twoDArray_1[i][j] = "*";
+                }
+            }
+            System.out.println(Arrays.toString(twoDArray_1[i]));
+        }
     }
 
     /**
